@@ -9,12 +9,14 @@ Este projeto tem como objetivo apresentar informações sobre o curso de __Tecno
 - Ajustado barra de pesquisa para não aplicar o dark mode e ser exibida de forma mais simples na página.
 - Alterado o nome da página __Contato__ para __Fale Conosco__ pois acredito ter mais coerência com a página.
 - Implementado novos textos nas paginas de __Início, Sobre e Fale Conosco__.
+- Adicionado campo de assunto para iniciar o fale conosco.
 - Foi implementado novas palavras no arquivo de traduções para todos os textos que foram adicionados.
 - Ajustado as cores das palavras do footer, pois estavam fora de padrão com o restante da página.
 - Adicionado uma parte que representa a __matriz curricular__ do curso na aba __Sobre__.
 - Ajustado as imagens que estavam na página para terem melhor qualidade de visualização.
 - Adicionado suporte ao idioma __francês__ para ampliar o público atendido.
 - Ajustado campo de busca para filtrar em todos os idiomas disponíveis.
+- Adicionado botão de download de PDF da matriz curricular na página __Sobre__
 
 
 <details>
