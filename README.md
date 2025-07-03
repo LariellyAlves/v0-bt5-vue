@@ -13,9 +13,8 @@ Este projeto tem como objetivo apresentar informações sobre o curso de __Tecno
 - Ajustado as cores das palavras do footer, pois estavam fora de padrão com o restante da página.
 - Adicionado uma parte que representa a __matriz curricular__ do curso na aba __Sobre__.
 - Ajustado as imagens que estavam na página para terem melhor qualidade de visualização.
-- Adicionado o idioma __Francês__ na página para abrangir os alcances.
-
-
+- Adicionado suporte ao idioma __francês__ para ampliar o público atendido.
+- Ajustado campo de busca para filtrar em todos os idiomas disponíveis.
 
 
 <details>

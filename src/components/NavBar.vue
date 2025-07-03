@@ -21,7 +21,7 @@ const languages = [
   { code: "pt" },
   { code: "en" },
   { code: "es" },
-  { code: "fr" }
+  { code: "fr" },
 ];
 
 const isLanguageOpen = ref(false);
@@ -34,13 +34,22 @@ const changeLanguage = (lang: string) => {
 
 /* busca */
 const query = ref("");
-const filteredRoutes = computed(() =>
-  routes.filter((r) =>
-    r.children?.some((c) =>
-      c.name?.toLowerCase().includes(query.value.toLowerCase())
-    )
-  )
-);
+
+const filteredRoutes = computed(() => {
+  if (!query.value) return [];
+  const lowerQuery = query.value.toLowerCase();
+
+  return routes.filter((route) => {
+    const routeNameKey = route.children?.[0]?.name?.toLowerCase() || "";
+    const translatedName = t(`routes.${routeNameKey}`).toLowerCase();
+    return translatedName.includes(lowerQuery);
+  });
+});
+
+function goToRoute(path: string) {
+  router.push(path);
+  query.value = "";
+}
 
 // Detecta tema do sistema e aplica tema salvo no localStorage (só se não for controlado via props)
 const detectThemeFromSystem = () => {
@@ -81,19 +90,42 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top"
-    :class="props.darkMode ? 'navbar-dark navbar_dark_custom' : 'navbar-light navbar-light-custom'">
+  <nav
+    class="navbar navbar-expand-md bg-body-tertiary sticky-top"
+    :class="
+      props.darkMode
+        ? 'navbar-dark navbar_dark_custom'
+        : 'navbar-light navbar-light-custom'
+    "
+  >
     <div class="container">
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-        aria-expanded="false" :aria-label="t('navbar.toggleNavigation')">
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        :aria-label="t('navbar.toggleNavigation')"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div id="navbarNav" class="collapse navbar-collapse d-flex justify-content-between">
+      <div
+        id="navbarNav"
+        class="collapse navbar-collapse d-flex justify-content-between"
+      >
         <!-- links das rotas -->
         <ul class="navbar-nav">
-          <li v-for="route in routes" :key="route.path" class="nav-item text-uppercase">
-            <router-link :to="route.path" class="nav-link" :class="{ active: isActive(route.path) }">
+          <li
+            v-for="route in routes"
+            :key="route.path"
+            class="nav-item text-uppercase"
+          >
+            <router-link
+              :to="route.path"
+              class="nav-link"
+              :class="{ active: isActive(route.path) }"
+            >
               {{
                 route.children[0]?.name
                   ? t(`routes.${route.children[0].name.toLowerCase()}`)
@@ -105,28 +137,48 @@ const toggleDarkMode = () => {
 
         <!-- busca + idioma + switch tema -->
         <div class="d-flex align-items-center">
-          <input v-model="query" :placeholder="t('navbar.search')" class="form-control me-2"/>
+          <input
+            v-model="query"
+            :placeholder="t('navbar.search')"
+            class="form-control me-2"
+            autocomplete="off"
+          />
 
           <!-- dropdown resultados -->
           <ul v-if="query && filteredRoutes.length" class="search-results">
-            <li v-for="r in filteredRoutes" :key="r.path">
-              {{ t(`routes.${r.children[0].name.toLowerCase()}`) }}
+            <li
+              v-for="route in filteredRoutes"
+              :key="route.path"
+              @click="goToRoute(route.path)"
+              class="search-result-item"
+            >
+              {{ t(`routes.${route.children?.[0]?.name.toLowerCase()}`) }}
             </li>
           </ul>
 
           <!-- seletor de idioma -->
           <div class="language-selector">
-            <button class="btn btn-outline-secondary dropdown-toggle" @click="isLanguageOpen = !isLanguageOpen"
-              :aria-expanded="isLanguageOpen">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              @click="isLanguageOpen = !isLanguageOpen"
+              :aria-expanded="isLanguageOpen"
+            >
               {{ t("language") }}:
               <span class="text-success">
                 {{ t("languageNames." + locale) }}
               </span>
             </button>
 
-            <ul class="dropdown-menu" :class="{ show: isLanguageOpen }" @click.stop>
+            <ul
+              class="dropdown-menu"
+              :class="{ show: isLanguageOpen }"
+              @click.stop
+            >
               <li v-for="lang in languages" :key="lang.code">
-                <button class="dropdown-item w-100 text-start" @click="changeLanguage(lang.code)">
+                <button
+                  class="dropdown-item w-100 text-start"
+                  @click="changeLanguage(lang.code)"
+                >
                   {{ t("languageNames." + lang.code) }}
                 </button>
               </li>
@@ -135,8 +187,13 @@ const toggleDarkMode = () => {
 
           <!-- dark-mode switch -->
           <div class="form-check form-switch ms-3">
-            <input id="darkModeSwitch" class="form-check-input" type="checkbox" :checked="props.darkMode"
-              @change="toggleDarkMode" />
+            <input
+              id="darkModeSwitch"
+              class="form-check-input"
+              type="checkbox"
+              :checked="props.darkMode"
+              @change="toggleDarkMode"
+            />
             <label class="form-check-label" for="darkModeSwitch">
               {{ t("navbar.darkMode") }}
             </label>
@@ -153,24 +210,24 @@ const toggleDarkMode = () => {
 }
 
 .navbar-light-custom {
-  background-color: #FFBE00 !important; 
+  background-color: #ffbe00 !important;
 }
 
 .navbar_dark_custom {
-  background-color: #FFBE00 !important;
+  background-color: #ffbe00 !important;
 }
 
 input.form-control {
   background-color: #fff !important;
   color: #000 !important;
   border: none !important;
-  box-shadow: none !important; 
-  outline: none !important;    
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 input.form-control::placeholder {
   color: #000 !important;
-  opacity: 1 !important; 
+  opacity: 1 !important;
 }
 
 /* === links do menu: hover + ativo === */
@@ -248,14 +305,28 @@ input.form-control::placeholder {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
-  max-height: 200px;
+  right: 0;
+  max-height: 180px;
   overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  z-index: 9999;
   list-style: none;
-  padding: 0;
   margin: 0;
-  z-index: 1000;
-  width: 100%;
+  padding: 0;
+  color: #000;
+}
+
+.search-result-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #4d36f5;
+  color: white;
 }
 
 .dark-results {
@@ -297,6 +368,4 @@ input.form-control::placeholder {
   background-color: #f1f1f1 !important;
   color: #000 !important;
 }
-
-
 </style>
