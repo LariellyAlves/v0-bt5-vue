@@ -37,6 +37,7 @@
     },
     "aboutPage": {
       "title": "Sobre o curso",
+      "subtitle":"Matriz Curricular",
       "paragraph1": "O curso de Tecnologia em Sistemas para Internet (TSI) da UTFPR – Campus Toledo, iniciado em 2014, é um tecnólogo de 3 anos de duração (6 semestres), totalmente gratuito e reconhecido pelo MEC desde 2017.",
       "paragraph2": "Focado no eixo de Informação e Comunicação, o TSI forma profissionais capazes de projetar, implementar e gerenciar sistemas web, incluindo interfaces, aplicativos, marketing eletrônico e intranets.",
       "paragraph3": "A matriz curricular, com cerca de 2.400 horas, inclui atividades práticas, estágio supervisionado (360h) e um Trabalho de Conclusão de Curso (TCC).",
@@ -101,6 +102,7 @@
     },
     "aboutPage": {
       "title": "About the Program",
+      "subtitle":"Curriculum Matrix",
       "paragraph1": "The Internet Systems Technology (TSI) program at UTFPR – Toledo Campus, launched in 2014, is a three-year (six-semester) undergraduate technology degree. It is completely tuition-free and has been officially recognized by the Brazilian Ministry of Education (MEC) since 2017.",
       "paragraph2": "Focused on the Information and Communication axis, the TSI program trains professionals capable of designing, implementing, and managing web systems, including interfaces, applications, electronic marketing, and intranets.",
       "paragraph3": "The curriculum, comprising approximately 2,400 hours, includes practical activities, supervised internship (360 hours), and a Final Course Project (TCC).",
@@ -165,6 +167,7 @@
     },
     "aboutPage": {
       "title": "Sobre el curso",
+      "subtitle":"Matriz Curricular",
       "paragraph1": "El curso de Tecnología en Sistemas para Internet (TSI) de la UTFPR – Campus Toledo, iniciado en 2014, es una tecnicatura de 3 años de duración (6 semestres), totalmente gratuita y reconocida por el MEC desde 2017.",
       "paragraph2": "Enfocado en el eje de Información y Comunicación, el TSI forma profesionales capaces de diseñar, implementar y gestionar sistemas web, incluyendo interfaces, aplicaciones, marketing electrónico e intranets.",
       "paragraph3": "La matriz curricular, con aproximadamente 2.400 horas, incluye actividades prácticas, pasantía supervisada (360 horas) y un Trabajo de Fin de Curso (TFC).",
