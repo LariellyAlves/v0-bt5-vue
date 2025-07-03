@@ -19,7 +19,7 @@ const { t } = useI18n();
 
     <!-- Segundo título e imagem -->
     <div class="imagem-section mt-5">
-      <h2 class="subtitulo">Matriz Curricular</h2>
+      <h2 v-html="t('aboutPage.subtitle')" class="subtitulo"></h2>
       <img src="https://i.imgur.com/VwMUxeT.jpeg" alt="Matriz Curricular" class="imagem-matriz" />
     </div>
   </div>
