@@ -1,4 +1,26 @@
 # v0-bt5-vue
+
+Este projeto tem como objetivo apresentar informações sobre o curso de __Tecnologia em Sistemas para Internet (TSI) da UTFPR__. A base do site já havia sido iniciada previamente, porém foram realizados diversos ajustes em funcionalidades existentes, além da implementação de novas features para aprimorar a estrutura, usabilidade e apresentação do conteúdo.
+
+## Alterações Realizadas
+
+- Corrigido funcionamento do __dark mode__ pois anteriormente não estava funcionando em todas as abas do site.
+- Ajustado as cores do __footer__ e __navbar__ para terem um destaque na página.
+- Ajustado barra de pesquisa para não aplicar o dark mode e ser exibida de forma mais simples na página.
+- Alterado o nome da página __Contato__ para __Fale Conosco__ pois acredito ter mais coerência com a página.
+- Implementado novos textos nas paginas de __Início, Sobre e Fale Conosco__.
+- Foi implementado novas palavras no arquivo de traduções para todos os textos que foram adicionados.
+- Ajustado as cores das palavras do footer, pois estavam fora de padrão com o restante da página.
+- Adicionado uma parte que representa a __matriz curricular__ do curso na aba __Sobre__.
+- Ajustado as imagens que estavam na página para terem melhor qualidade de visualização.
+
+
+
+
+<details>
+<summary>Passo a Passo do Trabalho</summary>
+
+# v0-bt5-vue
 Projeto inicial para outros projetos com [__vue3__](https://vuejs.org/) e [__bootstrap5__](https://getbootstrap.com/)
 
 O esperado de um projeto incial:
