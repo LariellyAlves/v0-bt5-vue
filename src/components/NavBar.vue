@@ -20,7 +20,8 @@ const isActive = (path: string) => path === activeRoute.value;
 const languages = [
   { code: "pt" },
   { code: "en" },
-  { code: "es" }
+  { code: "es" },
+  { code: "fr" }
 ];
 
 const isLanguageOpen = ref(false);

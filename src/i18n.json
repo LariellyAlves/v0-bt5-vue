@@ -31,13 +31,14 @@
       }
     },
     "languageNames": {
-      "pt": "Português",
-      "en": "Inglês",
-      "es": "Espanhol"
+      "pt": "Português 🇧🇷",
+      "en": "Inglês 🇺🇸",
+      "es": "Espanhol 🇪🇸",
+      "fr": "Francês 🇫🇷"
     },
     "aboutPage": {
       "title": "Sobre o curso",
-      "subtitle":"Matriz Curricular",
+      "subtitle": "Matriz Curricular",
       "paragraph1": "O curso de Tecnologia em Sistemas para Internet (TSI) da UTFPR – Campus Toledo, iniciado em 2014, é um tecnólogo de 3 anos de duração (6 semestres), totalmente gratuito e reconhecido pelo MEC desde 2017.",
       "paragraph2": "Focado no eixo de Informação e Comunicação, o TSI forma profissionais capazes de projetar, implementar e gerenciar sistemas web, incluindo interfaces, aplicativos, marketing eletrônico e intranets.",
       "paragraph3": "A matriz curricular, com cerca de 2.400 horas, inclui atividades práticas, estágio supervisionado (360h) e um Trabalho de Conclusão de Curso (TCC).",
@@ -58,7 +59,7 @@
     "homePage": {
       "title": "O que é a UTFPR?",
       "paragraph1": "A Universidade Tecnológica Federal do Paraná (UTFPR) é uma instituição pública de ensino superior reconhecida nacionalmente pela excelência em educação, pesquisa e inovação tecnológica. Fundada originalmente como Escola de Aprendizes Artífices, em 1909, passou por diversas transformações até se tornar universidade tecnológica em 2005, sendo a primeira do Brasil com esse título.",
-      "paragraph2": "Com sede em Curitiba, a UTFPR está presente em diversas cidades do Paraná, contando com 13 campi distribuídos pelo estado. Essa ampla presença regional contribui para o desenvolvimento local, promovendo acesso à educação superior de qualidade em diferentes áreas do conhecimento, com destaque para as engenharias, ciências exatas e tecnologia da informação.",
+      "paragraph2": "Com sede em Curitiba, a UTFPR está presente em diversas cidades do Paraná, contando com 13 campus distribuídos pelo estado. Essa ampla presença regional contribui para o desenvolvimento local, promovendo acesso à educação superior de qualidade em diferentes áreas do conhecimento, com destaque para as engenharias, ciências exatas e tecnologia da informação.",
       "paragraph3": "A universidade oferece cursos de graduação, mestrado e doutorado, além de programas de extensão e pesquisa científica. Seu modelo educacional é voltado para a formação técnica e tecnológica, com foco na prática, na inovação e na aproximação com o setor produtivo. Esse perfil faz da UTFPR uma referência em formação profissional alinhada às demandas do mercado e da sociedade.",
       "paragraph4": "Além da qualidade acadêmica, a UTFPR valoriza a inclusão, a responsabilidade social e o desenvolvimento sustentável, promovendo projetos que beneficiam comunidades e incentivam o empreendedorismo. Seu compromisso com a ciência e com a formação cidadã contribui para o avanço tecnológico do país e para a construção de um futuro mais justo e inovador."
     }
@@ -96,13 +97,14 @@
       }
     },
     "languageNames": {
-      "pt": "Portuguese",
-      "en": "English",
-      "es": "Spanish"
+      "pt": "Portuguese 🇧🇷",
+      "en": "English 🇺🇸",
+      "es": "Spanish 🇪🇸",
+      "fr": "French 🇫🇷"
     },
     "aboutPage": {
       "title": "About the Program",
-      "subtitle":"Curriculum Matrix",
+      "subtitle": "Curriculum Matrix",
       "paragraph1": "The Internet Systems Technology (TSI) program at UTFPR – Toledo Campus, launched in 2014, is a three-year (six-semester) undergraduate technology degree. It is completely tuition-free and has been officially recognized by the Brazilian Ministry of Education (MEC) since 2017.",
       "paragraph2": "Focused on the Information and Communication axis, the TSI program trains professionals capable of designing, implementing, and managing web systems, including interfaces, applications, electronic marketing, and intranets.",
       "paragraph3": "The curriculum, comprising approximately 2,400 hours, includes practical activities, supervised internship (360 hours), and a Final Course Project (TCC).",
@@ -161,13 +163,14 @@
       }
     },
     "languageNames": {
-      "pt": "Portugués",
-      "en": "Inglés",
-      "es": "Español"
+      "pt": "Portugués 🇧🇷",
+      "en": "Inglés 🇺🇸",
+      "es": "Español 🇪🇸",
+      "fr": "Francés 🇫🇷"
     },
     "aboutPage": {
       "title": "Sobre el curso",
-      "subtitle":"Matriz Curricular",
+      "subtitle": "Matriz Curricular",
       "paragraph1": "El curso de Tecnología en Sistemas para Internet (TSI) de la UTFPR – Campus Toledo, iniciado en 2014, es una tecnicatura de 3 años de duración (6 semestres), totalmente gratuita y reconocida por el MEC desde 2017.",
       "paragraph2": "Enfocado en el eje de Información y Comunicación, el TSI forma profesionales capaces de diseñar, implementar y gestionar sistemas web, incluyendo interfaces, aplicaciones, marketing electrónico e intranets.",
       "paragraph3": "La matriz curricular, con aproximadamente 2.400 horas, incluye actividades prácticas, pasantía supervisada (360 horas) y un Trabajo de Fin de Curso (TFC).",
@@ -192,6 +195,71 @@
       "paragraph3": "La universidad ofrece cursos de pregrado, maestría y doctorado, además de programas de extensión e investigación científica. Su modelo educativo está orientado a la formación técnica y tecnológica, con énfasis en la práctica, la innovación y la proximidad con el sector productivo. Este perfil convierte a la UTFPR en una referencia en formación profesional alineada con las demandas del mercado y la sociedad.",
       "paragraph4": "Además de la calidad académica, la UTFPR valora la inclusión, la responsabilidad social y el desarrollo sostenible, promoviendo proyectos que benefician a las comunidades e incentivan el emprendimiento. Su compromiso con la ciencia y la formación ciudadana contribuye al avance tecnológico del país y a la construcción de un futuro más justo e innovador."
     }
+  },
+
+  "fr": {
+    "welcome": "Bienvenue sur le site de TSI !",
+    "language": "Langue",
+    "navbar": {
+      "search": "Rechercher",
+      "darkMode": "Mode Sombre",
+      "toggleNavigation": "Basculer la navigation",
+      "noResults": "Aucun résultat trouvé"
+    },
+    "routes": {
+      "home": "Accueil",
+      "about": "À propos",
+      "contacts": "Contactez-nous"
+    },
+    "footer": {
+      "title": "Université Fédérale de Technologie du Paraná (UTFPR)",
+      "description": "L'UTFPR est une institution d'enseignement supérieur axée sur la technologie et l'innovation, offrant des cours de licence, de master et des programmes de recherche.",
+      "contact": "Contact",
+      "address": "R. Cristo Rei, 19 – Vila Becker, Toledo – PR, 85902-490",
+      "phone": "(45) 3379-6800",
+      "email": "contato@utfpr.edu.br",
+      "copyright": "© 2025 Université Fédérale de Technologie du Paraná. Tous droits réservés.",
+      "socialMedia": {
+        "whatsapp": "Lien vers WhatsApp",
+        "twitter": "Lien vers Twitter",
+        "youtube": "Lien vers YouTube",
+        "instagram": "Lien vers Instagram",
+        "facebook": "Lien vers Facebook",
+        "linkedin": "Lien vers LinkedIn"
+      }
+    },
+    "languageNames": {
+      "pt": "Portugais 🇧🇷",
+      "en": "Anglais 🇺🇸",
+      "es": "Espagnol 🇪🇸",
+      "fr": "Français 🇫🇷"
+    },
+    "aboutPage": {
+      "title": "À propos du cours",
+      "subtitle": "Programme d'études",
+      "paragraph1": "Le cours de Technologie des Systèmes Internet (TSI) de l'UTFPR – Campus Toledo, lancé en 2014, est un programme de technologue d'une durée de 3 ans (6 semestres), entièrement gratuit et reconnu par le MEC depuis 2017.",
+      "paragraph2": "Axé sur le domaine de l'information et de la communication, le TSI forme des professionnels capables de concevoir, de mettre en œuvre et de gérer des systèmes web, y compris des interfaces, des applications, du marketing électronique et des intranets.",
+      "paragraph3": "Le programme d'études, d'environ 2 400 heures, comprend des activités pratiques, un stage supervisé (360h) et un travail de fin d'études (TCC).",
+      "paragraph4": "Le cours dispose de laboratoires informatiques avec des dizaines de stations de développement, ainsi que d'infrastructures de soutien telles qu'une bibliothèque physique et numérique, des salles d'étude individuelles et collectives. En 2023, le TSI a obtenu la note 4 (sur une échelle de 1 à 5) lors de l'évaluation du MEC, se distinguant par son organisation pédagogique, son corps enseignant qualifié (tous titulaires d’un master ou d’un doctorat avec une production scientifique pertinente) et par son infrastructure de qualité."
+    },
+    "contactPage": {
+      "title": "Contactez-nous",
+      "form": {
+        "nameLabel": "Nom",
+        "namePlaceholder": "Entrez votre nom",
+        "emailLabel": "Email",
+        "emailPlaceholder": "email@exemple.com",
+        "subjectLabel": "Sujet",
+        "subjectPlaceholder": "Saisissez le sujet",
+        "submitButton": "Envoyer"
+      }
+    },
+    "homePage": {
+      "title": "Qu'est-ce que l'UTFPR ?",
+      "paragraph1": "L'Université Fédérale de Technologie du Paraná (UTFPR) est une institution publique d'enseignement supérieur reconnue au niveau national pour son excellence en éducation, en recherche et en innovation technologique. Fondée initialement comme École d'Apprentis Artisans en 1909, elle a subi plusieurs transformations jusqu'à devenir une université technologique en 2005, la première du genre au Brésil.",
+      "paragraph2": "Basée à Curitiba, l'UTFPR est présente dans plusieurs villes du Paraná, avec 13 campus répartis dans tout l'État. Cette présence régionale contribue au développement local, en offrant un accès à un enseignement supérieur de qualité dans divers domaines, notamment les ingénieries, les sciences exactes et les technologies de l'information.",
+      "paragraph3": "L'université propose des cours de licence, de master et de doctorat, ainsi que des programmes d'extension et de recherche scientifique. Son modèle éducatif est axé sur la formation technique et technologique, mettant l'accent sur la pratique, l'innovation et la proximité avec le secteur productif. Ce profil fait de l'UTFPR une référence dans la formation professionnelle adaptée aux besoins du marché et de la société.",
+      "paragraph4": "Outre la qualité académique, l'UTFPR valorise l'inclusion, la responsabilité sociale et le développement durable, en promouvant des projets qui bénéficient aux communautés et encouragent l'entrepreneuriat. Son engagement envers la science et la formation citoyenne contribue à l'avancement technologique du pays et à la construction d'un avenir plus juste et innovant."
+    }
   }
 }
-

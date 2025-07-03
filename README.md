@@ -13,6 +13,7 @@ Este projeto tem como objetivo apresentar informações sobre o curso de __Tecno
 - Ajustado as cores das palavras do footer, pois estavam fora de padrão com o restante da página.
 - Adicionado uma parte que representa a __matriz curricular__ do curso na aba __Sobre__.
 - Ajustado as imagens que estavam na página para terem melhor qualidade de visualização.
+- Adicionado o idioma __Francês__ na página para abrangir os alcances.
 
 
 
@@ -20,7 +21,6 @@ Este projeto tem como objetivo apresentar informações sobre o curso de __Tecno
 <details>
 <summary>Passo a Passo do Trabalho</summary>
 
-# v0-bt5-vue
 Projeto inicial para outros projetos com [__vue3__](https://vuejs.org/) e [__bootstrap5__](https://getbootstrap.com/)
 
 O esperado de um projeto incial:
